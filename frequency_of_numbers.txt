@@ -1,0 +1,18 @@
+# Create list
+my_list = [3, 4, 5, 5, 4, 3]
+
+# Create dictionary
+my_dict = {}
+
+# Use iterable to find index of each value
+for index, val in enumerate(my_list) :
+
+# Use logical function
+    if val not in my_dict :
+        my_dict[val] = [index, index]
+
+    else :
+        my_dict[val][1] = index
+
+# Display dictionary
+print(my_dict)
