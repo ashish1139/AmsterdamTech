@@ -1,0 +1,156 @@
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: C:\Users\MR ASIS\M2 Project2.py
+Number_of_Customers          False
+Menu_Price                   False
+Marketing_Spend              False
+Cuisine_Type                 False
+Average_Customer_Spending    False
+Promotions                   False
+Reviews                      False
+Monthly_Revenue              False
+dtype: bool
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 8 columns):
+ #   Column                     Non-Null Count  Dtype  
+---  ------                     --------------  -----  
+ 0   Number_of_Customers        1000 non-null   int64  
+ 1   Menu_Price                 1000 non-null   float64
+ 2   Marketing_Spend            1000 non-null   float64
+ 3   Cuisine_Type               1000 non-null   object 
+ 4   Average_Customer_Spending  1000 non-null   float64
+ 5   Promotions                 1000 non-null   int64  
+ 6   Reviews                    1000 non-null   int64  
+ 7   Monthly_Revenue            1000 non-null   float64
+dtypes: float64(4), int64(3), object(1)
+memory usage: 62.6+ KB
+None
+   Number_of_Customers  Menu_Price  ...  Reviews Monthly_Revenue
+0                   61   43.117635  ...       45      350.912040
+1                   24   40.020077  ...       36      221.319091
+2                   81   41.981485  ...       91      326.529763
+3                   70   43.005307  ...       59      348.190573
+4                   30   17.456199  ...       30      185.009121
+
+[5 rows x 8 columns]
+(1000, 8)
+[[61 43.11763548709968 12.66379252026928 ... 0 45 350.9120399867156]
+ [24 40.02007699061254 4.577892096932272 ... 0 36 221.3190913292622]
+ [81 41.98148523678063 4.65291077125362 ... 1 91 326.52976287588587]
+ ...
+ [69 17.110655514049927 4.141898363531425 ... 0 55 312.21255166393405]
+ [73 37.66472222277277 3.046555713253576 ... 0 23 272.4822042584115]
+ [81 34.72206697148744 17.989104250922033 ... 1 72 379.973071926579]]
+Index(['Number_of_Customers', 'Menu_Price', 'Marketing_Spend', 'Cuisine_Type',
+       'Average_Customer_Spending', 'Promotions', 'Reviews',
+       'Monthly_Revenue'],
+      dtype='object')
+RangeIndex(start=0, stop=1000, step=1)
+       Number_of_Customers  Menu_Price  ...  Reviews  Monthly_Revenue
+count              1000.00     1000.00  ...  1000.00          1000.00
+mean                 53.27       30.22  ...    49.84           268.72
+std                  26.36       11.28  ...    29.23           103.98
+min                  10.00       10.01  ...     0.00           -28.98
+25%                  30.00       20.40  ...    24.00           197.10
+50%                  54.00       30.86  ...    50.00           270.21
+75%                  74.00       39.84  ...    76.00           343.40
+max                  99.00       49.97  ...    99.00           563.38
+
+[8 rows x 7 columns]
+Cuisine_Type
+American    69018.84
+Italian     61178.37
+Japanese    71185.45
+Mexican     67341.52
+Name: Monthly_Revenue, dtype: float64
+  Type of Cuisine  Monthly Revenue
+0        American         69018.84
+1         Italian         61178.37
+2        Japanese         71185.45
+3         Mexican         67341.52
+Cuisine_Type
+American    13682
+Italian     12243
+Japanese    14141
+Mexican     13205
+Name: Number_of_Customers, dtype: int64
+  Type of Cuisine  Number of Customers
+0        American                13682
+1         Italian                12243
+2        Japanese                14141
+3         Mexican                13205
+Cuisine_Type
+American    0.26
+Italian     0.23
+Japanese    0.26
+Mexican     0.25
+Name: Monthly_Revenue, dtype: float64
+  Type of Cuisine  Proportion of Revenue
+0        American                   0.26
+1         Italian                   0.23
+2        Japanese                   0.26
+3         Mexican                   0.25
+              Monthly_Revenue
+Cuisine_Type                 
+American               269.60
+Italian                263.70
+Japanese               271.70
+Mexican                269.37
+  Type of Cuisine  Average Monthly Revenue
+0        American                   269.60
+1         Italian                   263.70
+2        Japanese                   271.70
+3         Mexican                   269.37
+     Number_of_Customers  Menu_Price  ...  Reviews Monthly_Revenue
+54                    11   32.620334  ...       87      -28.977809
+605                   13   36.130521  ...       12      -28.920890
+104                   10   11.313867  ...       24      -27.610276
+110                   17   22.458927  ...       57      -25.453430
+735                   10   33.087409  ...       31       -7.627382
+..                   ...         ...  ...      ...             ...
+507                   99   44.724913  ...       92      518.327003
+308                   95   45.399934  ...       99      522.766636
+729                   83   41.820415  ...       61      539.371604
+894                   92   23.342782  ...       13      542.467282
+84                    96   16.620820  ...       23      563.381332
+
+[1000 rows x 8 columns]
+     Number_of_Customers  Menu_Price  ...  Reviews Monthly_Revenue
+84                    96   16.620820  ...       23      563.381332
+894                   92   23.342782  ...       13      542.467282
+729                   83   41.820415  ...       61      539.371604
+308                   95   45.399934  ...       99      522.766636
+507                   99   44.724913  ...       92      518.327003
+..                   ...         ...  ...      ...             ...
+735                   10   33.087409  ...       31       -7.627382
+110                   17   22.458927  ...       57      -25.453430
+104                   10   11.313867  ...       24      -27.610276
+605                   13   36.130521  ...       12      -28.920890
+54                    11   32.620334  ...       87      -28.977809
+
+[1000 rows x 8 columns]
+     Number_of_Customers  Menu_Price  ...  Reviews Monthly_Revenue
+54                    11       32.62  ...       87          -28.98
+104                   10       11.31  ...       24          -27.61
+110                   17       22.46  ...       57          -25.45
+605                   13       36.13  ...       12          -28.92
+735                   10       33.09  ...       31           -7.63
+
+[5 rows x 8 columns]
+Cuisine_Type                 American     Italian  ...     Mexican         All
+Average_Customer_Spending                          ...                        
+10.037176674798442         354.051169    0.000000  ...    0.000000  354.051169
+10.065750284497987         404.502210    0.000000  ...    0.000000  404.502210
+10.108325992818084           0.000000    0.000000  ...  159.405305  159.405305
+10.153485820312037           0.000000    0.000000  ...  364.167997  364.167997
+10.205585103422411           0.000000    0.000000  ...    0.000000  224.620983
+...                               ...         ...  ...         ...         ...
+49.818966093872575           0.000000    0.000000  ...  138.269645  138.269645
+49.820438720634655           0.000000  313.494869  ...    0.000000  313.494869
+49.872367227244354           0.000000    0.000000  ...    0.000000  367.171101
+49.900725246907              0.000000    0.000000  ...    0.000000  271.884740
+All                        269.604825  263.699862  ...  269.366082  268.724172
+
+[1001 rows x 5 columns]
