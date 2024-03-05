@@ -6,6 +6,8 @@ I am creating this project at the end of Module 2.
 
 # Import math package
 import math
+
+# Import time package
 import time
 
 # Define a square root function using lambda
@@ -78,6 +80,7 @@ print(rest_df.columns)
 # Display index of the dataset
 print(rest_df.index)
 
+![image](https://github.com/ashish1139/AmsterdamTech/assets/153742869/3fdcd8f1-f569-4eae-9086-529529f6c379)
 
 
 
