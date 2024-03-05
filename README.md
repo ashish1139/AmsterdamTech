@@ -22,8 +22,10 @@ result = sqrt_fun(num)
 # Calculate end time
 end_time = time.time()
 
-# Print the result and time of execution
+# Print the result
 print("Square root is:", result)
+
+# Print execution time
 print("Execution time:", end_time - start_time, "seconds")
 
 # 2. Presenting Data to Different Teams
@@ -34,20 +36,22 @@ I have considered my first business case as restaurant business. For this purpos
 
 •	I focussed on the following technical details to analyze restaurant revenue data : 
 
-i)	Importing pandas, numpy and matplotlib.pyplot Python packages.
-ii)	Loading the csv file.
-iii)	Checking if there are any missing values in the dataset
-iv)	Checking the column head
-v)	Checking the first few rows
-vi)	Checking shape, values, columns and index of the dataset
+* i)	Importing pandas, numpy and matplotlib.pyplot Python packages.
+* ii)	Loading the csv file.
+* iii)	Checking if there are any missing values in the dataset
+* iv)	Checking the column head
+* v)	Checking the first few rows
+* vi)	Checking shape, values, columns and index of the dataset
 
 Python codes:
 
 # Import pandas with alias pd
-# Import numpy with alias np
-# Import matplotlib.pyplot as plt
 import pandas as pd
+
+# Import numpy with alias np
 import numpy as np
+
+# Import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 
 # Use the csv dataset of Restaurant_revenue (1) and read in Python
@@ -62,10 +66,16 @@ print(rest_df.info())
 # Look at first few rows of the dataset
 print(rest_df.head())
 
-# Look at other properties of the dataset
+# Display shape of the dataset
 print(rest_df.shape)
+
+# Display values of the dataset
 print(rest_df.values)
+
+# Display columns of the dataset
 print(rest_df.columns)
+
+# Display index of the dataset
 print(rest_df.index)
 
 
