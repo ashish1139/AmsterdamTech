@@ -1,10 +1,36 @@
-# M2 Project: Presenting Data to Different Teams
+# M2 Project: 
 
 I am creating this project at the end of Module 2.
 
+# 1. Creation of time decorator:
+
+# Import math package
+import math
+import time
+
+# Define a square root function using lambda
+sqrt_fun = lambda num: "???Please Enter a positive number!" if num < 0 else num ** 0.5
+
+num = int(input("Enter a value:"))  # Input can be any number
+
+# Calculate start time
+start_time = time.time()
+
+# Call the sqrt_fun() to find the result
+result = sqrt_fun(num)
+
+# Calculate end time
+end_time = time.time()
+
+# Print the result and time of execution
+print("Square root is:", result)
+print("Execution time:", end_time - start_time, "seconds")
+
+# 2. Presenting Data to Different Teams
+
 I have considered my first business case as restaurant business. For this purpose, I have considered the dataset “Restaurant_revenue (1).csv”. Then I have prepared different reports to present.
 
-For Data Science/Programming Team Head:
+# For Data Science/Programming Team Head:
 
 •	I focussed on the following technical details to analyze restaurant revenue data : 
 
